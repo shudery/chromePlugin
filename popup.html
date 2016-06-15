@@ -1,0 +1,63 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+       width:300px;
+      }
+      .box{
+        width:25%;
+        height:50px;
+        float:left;
+      }
+      #box1{
+        background-color:red;
+      }
+       #box2{
+        background-color:blue;
+      }
+       #box3{
+        background-color:green;
+      }
+       #box4{
+        background-color:yellow;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  <script type="text/javascript" src='jquery.min.js'></script>
+  </head>
+  <body>
+    <div id="status">
+      <div class="box" id='box1'><button>red</button></div>
+      <div class="box" id='box2'><button>blue</button></div>
+      <div class="box" id='box3'><button>green</button></div>
+      <div class="box" id='box4'><button>yellow</button></div>
+    </div>
+    <div id='myCustomEventDiv'></div>
+    <img id="image-result" hidden>
+
+      <script src="popup.js"></script>
+
+  </body>
+</html>
+
