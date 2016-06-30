@@ -4,17 +4,18 @@
   "name": "Getting started example",
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
-
+  //侧栏图标设置
   "browser_action": {
     "default_icon": "images/icon.png",
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
+  //注入脚本设置
   "content_scripts": [{
     "js": ["jquery.min.js", "contentscript.js"],
-    "matches": ["http://*/*"]
+    "matches": ["http://*/*","https://*/*"]
   }],
-  //扩展图标
+  //扩展,商店图标
   "icons": {
     "128": "images/icon.png",
     "16": "images/icon.png",
