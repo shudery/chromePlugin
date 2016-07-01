@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('box4').onclick = function() {
     data = 'yellow';
   }
+  chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    $('#box4 button').text('???');
+  });
 
   function sendData(data) {
     chrome.tabs.query({
