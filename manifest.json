@@ -6,7 +6,7 @@
   "version": "1.0",
   //侧栏图标设置
   "browser_action": {
-    "default_icon": "images/icon.png",
+    "default_icon": "images/daguo64t.png",
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
@@ -17,9 +17,9 @@
   }],
   //扩展,商店图标
   "icons": {
-    "128": "images/icon.png",
-    "16": "images/icon.png",
-    "48": "images/icon.png"
+    "128": "images/daguo128.png",
+    "16": "images/daguo16.png",
+    "48": "images/daguo64t.png"
   },
   "permissions": [
     "tabs",
